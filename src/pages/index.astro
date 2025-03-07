@@ -14,25 +14,25 @@ import SideStatsLeft from "@components/content/features/SideStatsLeft.astro";
 import Pricing from "@components/content/Pricing.astro";
 import Cta from "@components/content/Cta.astro";
 import Testimonials from "@components/content/Testimonials.astro";
+import Visit from "@components/section/Visit.astro";
 ---
 
 <Layout title="Home">
   <HeroMain />
-
   <SectionMuted>
     <Container>
       <SectionTitle
-        title="Forget about the hassle"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-        minititle="On-Demand Healthcare"
+        title="Olvídate de las complicaciones"
+        subtitle="Accede a atención médica de calidad de forma rápida y sencilla. Nuestro equipo está listo para ayudarte en todo momento."
+        minititle="Atención Médica Bajo Demanda"
       />
 
       <div class="grid md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-12" x-intersect="activeStep = ''">
         <!-- Item -->
         <div>
           <IconBlock
-            title="Save time & effort"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
+            title="Ahorra tiempo y esfuerzo"
+            text="Agenda tus consultas en línea y evita largas esperas. Recibe atención médica sin salir de casa."
             icon="ph:timer-duotone"
             class="'text-primary-600'"
           />
@@ -40,8 +40,8 @@ import Testimonials from "@components/content/Testimonials.astro";
         <!-- Item -->
         <div>
           <IconBlock
-            title="Curated professionals"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
+            title="Profesionales certificados"
+            text="Nuestro equipo médico está compuesto por especialistas altamente calificados y con amplia experiencia."
             icon="ph:first-aid-duotone"
             class="'text-rose-500'"
           />
@@ -49,8 +49,8 @@ import Testimonials from "@components/content/Testimonials.astro";
         <!-- Item -->
         <div>
           <IconBlock
-            title="24/24 Emergencies"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
+            title="Emergencias 24/7"
+            text="Atención médica disponible en todo momento para brindarte la ayuda que necesitas en situaciones urgentes."
             icon="ph:first-aid-kit-duotone"
             class="'text-primary-600'"
           />
@@ -58,8 +58,8 @@ import Testimonials from "@components/content/Testimonials.astro";
         <!-- Item -->
         <div>
           <IconBlock
-            title="Connected services"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
+            title="Servicios integrados"
+            text="Consulta con diferentes especialistas y accede a tratamientos complementarios sin complicaciones."
             icon="ph:heartbeat-duotone"
             class="'text-rose-500'"
           />
@@ -67,8 +67,8 @@ import Testimonials from "@components/content/Testimonials.astro";
         <!-- Item -->
         <div>
           <IconBlock
-            title="Video consultations"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
+            title="Consultas por video"
+            text="Habla con un médico desde la comodidad de tu hogar a través de videollamadas seguras y privadas."
             icon="ph:video-camera-duotone"
             class="'text-primary-600'"
           />
@@ -76,8 +76,8 @@ import Testimonials from "@components/content/Testimonials.astro";
         <!-- Item -->
         <div>
           <IconBlock
-            title="Audio consultations"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
+            title="Consultas por audio"
+            text="Recibe orientación médica a través de llamadas de audio con nuestros profesionales de salud."
             icon="ph:phone-duotone"
             class="'text-primary-600'"
           />
@@ -85,8 +85,8 @@ import Testimonials from "@components/content/Testimonials.astro";
         <!-- Item -->
         <div>
           <IconBlock
-            title="Appointements"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
+            title="Agendamiento de citas"
+            text="Reserva tu consulta fácilmente y elige el horario que mejor se adapte a tu disponibilidad."
             icon="ph:calendar-duotone"
             class="'text-primary-600'"
           />
@@ -94,8 +94,8 @@ import Testimonials from "@components/content/Testimonials.astro";
         <!-- Item -->
         <div>
           <IconBlock
-            title="Medicine"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
+            title="Recetas médicas"
+            text="Obtén recetas electrónicas y accede a la medicación que necesitas sin complicaciones."
             icon="ph:pill-duotone"
             class="'text-primary-600'"
           />
@@ -103,15 +103,14 @@ import Testimonials from "@components/content/Testimonials.astro";
       </div>
     </Container>
   </SectionMuted>
-
   <SectionMuted class="'border-b border-muted-200 dark:border-muted-800'">
     <Container>
       <SectionTitle
-        title="Our great doctors"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-        minititle="Healthcare Professionals"
-        class="'mx-auto text-center'"
-      />
+      title="Nuestros excelentes médicos"
+      subtitle="Contamos con un equipo de especialistas altamente capacitados, comprometidos con tu salud y bienestar."
+      minititle="Profesionales de la Salud"
+      class="'mx-auto text-center'"
+  />  
 
       <div id="doctors" x-data="doctors()"  x-intersect="activeStep = 'spy-1'">
         <Toolbar />
@@ -148,12 +147,12 @@ import Testimonials from "@components/content/Testimonials.astro";
 
   <SectionMuted>
     <Container>
-      <SectionTitle
+      <!-- <SectionTitle
         title="Pricing Options"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
         minititle="Simple Pricing"
         class="'mx-auto text-center'"
-      />
+      /> -->
       <Pricing />
     </Container>
   </SectionMuted>
@@ -161,11 +160,26 @@ import Testimonials from "@components/content/Testimonials.astro";
   <SectionMuted>
     <Container>
       <SectionTitle
-        title="They love Dokto"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-        minititle="Our Patients"
+        title="Visítanos"
+        subtitle="Encuéntranos en nuestra ubicación y descubre todo lo que tenemos para ofrecerte. Nuestro equipo está listo para atenderte con la mejor atención y profesionalismo."
+        minititle="Ubicación"
         class="'mx-auto text-center'"
       />
+      <div id="visit" x-data="visit()"  x-intersect="activeStep = 'spy-4'"></div>
+      <Visit />
+    </Container>
+  </SectionMuted>
+  
+  
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+    title="Nuestros pacientes confían en nosotros"
+    subtitle="Las experiencias de nuestros pacientes hablan por sí solas. Descubre cómo hemos mejorado su calidad de vida con nuestros servicios médicos."
+    minititle="Testimonios"
+    class="'mx-auto text-center'"
+/>
+<div id="testimonials" x-data=testimonials()"  x-intersect="activeStep = 'spy-5'"></div>
       <Testimonials />
     </Container>
   </SectionMuted>
